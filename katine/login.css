@@ -1,0 +1,15 @@
+body {
+    background-image: url('bakgrunn.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* bakgrunner blit stående mens bruker skroller */
+}
+
+.midten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+

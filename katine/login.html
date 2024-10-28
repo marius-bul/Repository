@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="login.css">
+
+
+<center>
+<!-- Logg inn knappen -->
+<div class="midten">
+<button onclick="document.getElementById('id01').style.display='block'">Trykk for å logge på</button>
+
+
+
+<div id="id01" style="display:none;"> <!--gir div en id-->
+
+  <form action="katine.html"> <!--Gjør som at når login knappen er aktivert så blir man ført til katine.html-->
+
+
+    <!--Lager in div som har brukernavn, passord og logg inn knappet i ett-->
+    <div>
+      <label for="uname"><b>Brukernavn</b></label>
+      <input type="text" placeholder="Skriv inn brukernavn" name="uname" required>
+
+      <label for="psw"><b>Passord</b></label>
+      <input type="password" placeholder="Skriv inn passord" name="psw" required>
+
+      <button type="submit">Logg inn</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Husk meg
+      </label> <!--Knapp som gir valg om å lagre navn og passord-->
+    </div>
+
+    <div>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'">Avbryt</button> <!--Lukker den andre "div" som gjør at man bare ser login knappen-->
+    </div>
+  </form> <!--slutter form action katine.html-->
+</div>
+</center>
+<!--KODEN ER INSPERISERT FRA https://www.w3schools.com/howto/howto_css_login_form.asp -->
